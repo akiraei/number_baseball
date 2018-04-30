@@ -114,7 +114,7 @@ document.querySelector(".try").addEventListener("click", function () {
         document.querySelector(".try").classList.add("unshow")
         return ""
     }
-    if(result[1] > 3) {
+    if(result[1] > q3.length-1) {
         resultText.textContent = q2.join("") + ", You Win"
         document.querySelector(".try").classList.add("unshow")
         return ""
