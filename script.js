@@ -97,11 +97,12 @@ document.querySelector(".try").addEventListener("click", function () {
     //------------------------record-----------------------------------
     let recorder = document.querySelector(".record");
     recorder.appendChild(document.createElement("p"));
-    recorder.lastChild.textContent = 
-       "Inning: " + inning.toString() 
-     + " / Ball Count: " + result[0].toString() 
-     + " / Strike Count: " + result[1].toString() 
-     + " / Out Count: " + outCount.toString()
+    recorder.lastChild.textContent =
+      "Input: " + document.querySelector(".input").value.toString()
+     + " / Inning: " + inning.toString() 
+     + " / Ball: " + result[0].toString() 
+     + " / Strike: " + result[1].toString() 
+     + " / Out: " + outCount.toString()
 
      //------------------------judge-------------------------------
      if(outCount === 3) {
